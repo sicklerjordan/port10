@@ -358,7 +358,7 @@ text-align: center;
     color: var(--text);
     padding-bottom: 0;
     margin-bottom: 0;
-    margin-left: 280px;
+    margin-left: 260px;
     background: #8e9eab;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -366,6 +366,7 @@ text-align: center;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    width: 400px
 }
 
 .project-container video {
@@ -378,7 +379,7 @@ text-align: center;
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 10px;
-    margin-left: 280px;
+    margin-left: 410px; 
     font-size: 10px;
     cursor: pointer;
 }
@@ -399,7 +400,7 @@ text-align: center;
     border: 1px solid black;
     height: 150px;
     width: 300px;
-    background-color: #112240;
+    background-color: transparent;
     box-shadow: rgb(0 0 0 / 40%) 0px 8px 24px;
 }
 
@@ -470,35 +471,7 @@ text-align: center;
 }
     
 }
-@media screen and (max-width: 1100px) {
-    .project-container {
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-        padding-right: 0;
-        margin-left: 33%;
 
-    }
-    .project-container .card {
-        height: 200px;
-        width: 370px;
-    }
-    .project-container video {
-        height: 200px; 
-        width: 370px;
-    }
-    .project-container img {
-        height: 200px;
-        width: 370px;
-    }
-
-    .project-header {
-        margin-top: 50px;
-        margin-left: 33%;
-    }
-    #sub{
-        margin-left: 33%
-    }
-}
 @media screen and (max-width: 590px) {
     .project-container .card {
         height: 150px;
@@ -521,28 +494,7 @@ text-align: center;
     }
 }
 
-@media  screen and (max-width: 550px) {
-    .project-header {
-        margin: auto;
-        margin-top: 600px;
-        
-    }
 
-    .project-sub{
-       margin: auto;
-    }
-
-    .project-container .card {
-        height: 150px;
-        width: 270px;
-        margin: auto
-    }
-
-    .project-container img {
-        height: 150px;
-        width: 270px;
-    }
-}
 
 
 
@@ -697,6 +649,27 @@ text-align: center;
     color: var(--text);
    margin-left: 38%;
   }
+  .examples {
+    width: 70%;
+    max-width: 500px;
+    gap: 5px;
+    margin: auto;
+    right: 0;
+    margin-right: 38%;
+}
+.mid-card-title {
+    text-align: center;
+    margin-left: 330px;
+    width: 200px;
+}
+.outer-project{
+    width: 70%;
+    max-width: 500px;
+    gap: 5px;
+    margin: auto;
+    right: 0;
+    margin-right: 38%;
+}
   @media screen and (max-width: 1250px) {
     .examples {
     margin-left: 31%;  
@@ -723,12 +696,65 @@ text-align: center;
     width: 400px;
     height: 250px;
   }
+  .outer-project {
+    margin-right: 30%;
+}
+.project-header{
+    margin-left: 200px;
+}
+.project-sub {
+    margin-left: 280px;
+}
+.mid-card-title {
+    margin-left: 240px;
+}
   }
+  @media screen and (max-width: 1100px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding-right: 0;
+        margin-left: 33%;
+
+    }
+    .project-container .card {
+        height: 200px;
+        width: 370px;
+    }
+    .project-container video {
+        height: 200px; 
+        width: 370px;
+    }
+    .project-container img {
+        height: 200px;
+        width: 370px;
+    }
+
+    .project-header {
+        margin-top: 50px;
+        margin-left: 33%;
+    }
+    #sub{
+        margin-left: 33%
+    }
+    .project-header {
+    margin-left: 150px;
+}
+.project-sub {
+    margin-left: 210px;
+}
+}
   @media (max-width: 850px){
     .examples { 
     margin-left: 34%;   
      
   }
+  .mid-card-title {
+    margin-left: 140px;
+}
+  .outer-project{
+    width: 30%; 
+}
     .mid-card{
     width: 200px; 
     height: 100px;
@@ -750,13 +776,35 @@ text-align: center;
     width: 400px;
     height: 250px;
   }
-  
+  .footer p {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.project-header {
+    margin-left: 28%;
+}
+.project-sub {
+    margin-left: 250px; 
+}
+.project-container {
+    margin-left: 0%;
+}
+.project-header {
+    margin-left: 0%;
+}
+.project-sub {
+    margin-left: 140px; 
+}
   }
   @media(max-width: 550px){
     .examples { 
     margin-left: 0%;   
      
   }
+  .outer-project{
+    width: 70%; 
+    margin-right: auto; 
+}
     .mid-card{
     width: 150px; 
     height: 75px; 
@@ -778,7 +826,52 @@ text-align: center;
     width: 400px;
     height: 250px;
   }
+  .project-header {
+    margin-left: 0px;
+}
+.project-sub {
+    margin-left: 0px;
+}
+.mid-card-title {
+    margin-left: 25%;
+}
+.footer p {
+    margin-left: 0px;
+    margin-right: 0px
+}
+.project-header{
+    width: auto;
+}
+.mid-card-title {
+    margin-left: 30%;
+}
   }
+  @media  screen and (max-width: 550px) {
+    .project-header {
+        margin: auto;
+        margin-top: 600px;
+        
+    }
+
+    .project-sub{
+       margin: auto;
+    }
+
+    .project-container .card {
+        height: 150px;
+        width: 270px;
+        margin: auto
+    }
+
+    .project-container img {
+        height: 150px;
+        width: 270px;
+    }
+    .project-container video {
+    height: 150px;
+    width: 270px;
+} 
+} 
   
     </style>
 
@@ -807,8 +900,8 @@ text-align: center;
         </div>
     </div>
     <div data-aos='fade-in'>
-
-        <h1 id="work" class='project-header'>SOME OF MY WORK</h1>
+                <div class="outer-project"> 
+                    <h1 id="work" class='project-header'>SOME OF MY WORK</h1> 
                 <a href='https://github.com/sicklerjordan' target="_blank" id="sub"><p class='project-sub'>GITHUB</p></a>
                 <div class='project-container'>
                 <div class='card'>
@@ -850,7 +943,7 @@ text-align: center;
                     <div class='card'>
                         <a href="">
                     <video muted autoStart autoPlay loop>
-                        <source autoStart autoPlay  type="video/mp4" src="ricky.mov"/>
+                        <source autoStart autoPlay  type="video/mp4" src="richard.mov"/>
                         </video>
                         </a>
                     </div>
@@ -871,11 +964,12 @@ text-align: center;
                     <div class='card'>
                         <a href="">
                             <video muted autoStart autoPlay loop>
-                        <source autoStart autoPlay  type="video/mp4" src="kkVid.mov"/>
+                        <source autoStart autoPlay  type="video/mp4" src="pac.mov"/>
                         </video>
                         </a>
                     </div> 
                 </div>
+            </div>
             </div>
             <div class='side'>
                 <div>
@@ -883,19 +977,19 @@ text-align: center;
                         <a href='https://github.com/sicklerjordan'><FaGithubSquare /></a>
                         <i class="fa-brands fa-square-instagram"></i>
                         
-                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="https://github.com/sicklerjordan" class="fa fa-github"></a>
+                            <a href="https://www.linkedin.com/in/jordan-sickler-946b8b222/" class="fa fa-linkedin"></a>
                             <a href="#" class="fa fa-twitter"></a>
                             <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-linkedin"></a>
                     </div>
                 </div>
                 <div class='lines'>
                     <div class='right-line'></div>
                 </div>
             </div>
-            <h2 class="mid-card-title">Ecommerce Builds</h2>
+            
             <div class="examples">
-                
+                <h2 class="mid-card-title">Ecommerce Builds</h2>
                 <div class="card-flex">
                     
                 <div class="mid-card">
