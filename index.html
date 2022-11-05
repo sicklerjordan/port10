@@ -138,6 +138,8 @@
     padding-left: 20px;
     font-size: 20px;
     position: fixed;
+    transform: translate(3000px, 0px); 
+
     
 }
 
@@ -523,11 +525,11 @@ text-align: center;
     color: var(--secondary);
     position: fixed;
     gap: 20px;
-    font-size: 20px;
-    top: 340px;
+    font-size: 20px; 
+    top: 370px; 
     right: 16px;
     transition: 1s;
-}
+}  
 
 .socials a{
     color: var(--secondary);
@@ -912,6 +914,25 @@ text-align: center;
      #sickler {
          color: var(--secondary);
      }
+     .fa-github{
+        position: absolute; 
+        margin-right: -200px;
+     }
+     a.fa.fa-instagram {
+    transform: translate(50px, 0px);
+}
+a.fa.fa-instagram {
+    transform: translate(50px, 0px);
+}
+a.fa.fa-github {
+    transform: translate(50px, 0px);
+}
+a.fa.fa-linkedin {
+    transform: translate(50px, 0px);
+}
+a.fa.fa-twitter {
+    transform: translate(50px, 0px); 
+}
     </style>
 
 </head>
@@ -1020,10 +1041,10 @@ text-align: center;
                         <a href='https://github.com/sicklerjordan'><FaGithubSquare /></a>
                         <i class="fa-brands fa-square-instagram"></i>
                         
-                            <a href="https://github.com/sicklerjordan" class="fa fa-github"></a>
-                            <a href="https://www.linkedin.com/in/jordan-sickler-946b8b222/" class="fa fa-linkedin"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
+                            <a  href="https://github.com/sicklerjordan" class="fa fa-github"></a>
+                            <a  href="https://www.linkedin.com/in/jordan-sickler-946b8b222/" class="fa fa-linkedin"></a>
+                            <a class="fa fa-twitter"></a>
+                            <a class="fa fa-instagram"></a>
                     </div>
                 </div>
                 <div class='lines'>
@@ -1090,10 +1111,17 @@ text-align: center;
                 gsap.to('.head', { duration: 1.5, delay: 1.5, y: '50%', ease: 'bounce' })
       gsap.to('.head1', { duration: 1.5, delay: 2.5, y: '50%', ease: 'bounce' })
       gsap.to('.app', {duration: 1.5, delay: 5, y: '-100%', ease: 'sine'})
-      gsap.fromTo('.icon', { duration: 40, opacity: 1, rotation: 0}, {duration: 40, opacity: 1, scale: 1, rotate: 2000})
-      gsap.to('.sideBar-container', {duration: 1.5, delay: 6, y: '120%', ease: 'sine'})  
-     
-
+      gsap.fromTo('.jay', { duration: 40, opacity: 1, rotation: 0}, {duration: 40, opacity: 1, scale: 1, rotate: 2000})
+      gsap.to('.sideBar-container', {duration: 1.5, delay: 6, y: '120%', ease: 'sine'})               
+      gsap.to('.fa-instagram', {duration: 1, delay: 9, x: '0%', ease: 'sine'})  
+      gsap.to('.fa-github', {duration: 1, delay: 6, x: '0%', ease: 'sine'})   
+      gsap.to('.fa-twitter', {duration: 1, delay: 8, x: '0%', ease: 'sine'})   
+      gsap.to('.fa-linkedin', {duration: 1, delay: 7, x: '0%', ease: 'sine'})  
+      gsap.to('.colone', {duration: 2, delay: 7, x: '0%', ease: 'sine'})  
+   
+         
+       
             </script> 
+           
 </body>
 </html>
