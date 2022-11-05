@@ -933,6 +933,15 @@ a.fa.fa-linkedin {
 a.fa.fa-twitter {
     transform: translate(50px, 0px); 
 }
+.portfolio {
+  animation: blinker 2s linear infinite; 
+}
+ 
+@keyframes blinker {
+  50% { 
+    opacity: 0;
+  }
+}
     </style>
 
 </head>
@@ -944,7 +953,7 @@ a.fa.fa-twitter {
     <div>
         <div class='container'>
             <div class='colone'>
-                <p>Jordans <span>Portfolio</span></p>
+                <p>Jordans <span class="portfolio">Portfolio</span></p>
             </div>
             
             <div class='sideBar-container'>
