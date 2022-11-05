@@ -81,6 +81,7 @@
     z-index: 22;
     align-items: center;
     overflow: scroll;
+    top: -100%
 }
 .current-job {
     color: #d7d7db;
@@ -624,7 +625,7 @@ text-align: center;
     height: 200px;
     margin: 20px;
     opacity: .7;
-    transition: 1s
+    transition: 1s;
   }
   .mid-card:hover{
     opacity: 1;
@@ -1090,6 +1091,9 @@ text-align: center;
       gsap.to('.head1', { duration: 1.5, delay: 2.5, y: '50%', ease: 'bounce' })
       gsap.to('.app', {duration: 1.5, delay: 5, y: '-100%', ease: 'sine'})
       gsap.fromTo('.icon', { duration: 40, opacity: 1, rotation: 0}, {duration: 40, opacity: 1, scale: 1, rotate: 2000})
+      gsap.to('.sideBar-container', {duration: 1.5, delay: 6, y: '120%', ease: 'sine'})  
+     
+
             </script> 
 </body>
 </html>
