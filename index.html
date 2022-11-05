@@ -872,11 +872,53 @@ text-align: center;
     width: 270px;
 } 
 } 
-  
+  .app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+    z-index: 10000;
+    position: absolute;
+    }
+     .head {
+       color: white;
+       height: 100%;
+       margin-top: -100px;
+     }
+     .head1 {
+       color: white;
+       height: 100%;
+       margin-top: -100px;
+     }
+    
+     .icon {
+       color: white;
+       font-size: 75px;
+       margin-top: 75px;
+       position: absolute;
+     }
+
+     .jay {
+         color: white;
+         font-weight: bold;
+         font-size: 17px;
+         position: absolute;
+         margin-top: 75px;
+     }
+
+     #sickler {
+         color: var(--secondary);
+     }
     </style>
 
 </head>
 <body>
+    <div class="app">
+        <p class='jay'>JS</p>
+        <h1 class="head">Jordan</h1><h1 class="head1" ref={h2Ref} id="sickler">Sickler</h1>
+      </div>
     <div>
         <div class='container'>
             <div class='colone'>
@@ -1042,5 +1084,12 @@ text-align: center;
                       <span>Designed and built by Jordan Sickler<br />
                           React JS CSS HTML</span>
             </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> 
+            <script>
+                gsap.to('.head', { duration: 1.5, delay: 1.5, y: '50%', ease: 'bounce' })
+      gsap.to('.head1', { duration: 1.5, delay: 2.5, y: '50%', ease: 'bounce' })
+      gsap.to('.app', {duration: 1.5, delay: 5, y: '-100%', ease: 'sine'})
+      gsap.fromTo('.icon', { duration: 40, opacity: 1, rotation: 0}, {duration: 40, opacity: 1, scale: 1, rotate: 2000})
+            </script> 
 </body>
 </html>
