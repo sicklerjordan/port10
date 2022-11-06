@@ -922,16 +922,16 @@ text-align: center;
     transform: translate(50px, 0px);
 }
 a.fa.fa-instagram {
-    transform: translate(50px, 0px);
+    transform: translate(0px, -1000px);
 }
 a.fa.fa-github {
-    transform: translate(50px, 0px);
+    transform: translate(0px, -1000px);
 }
 a.fa.fa-linkedin {
-    transform: translate(50px, 0px);
+    transform: translate(0px, -1000px);
 }
 a.fa.fa-twitter {
-    transform: translate(50px, 0px); 
+    transform: translate(0px, -1000px); 
 }
 .portfolio {
   animation: blinker 2s linear infinite; 
@@ -941,6 +941,115 @@ a.fa.fa-twitter {
   50% { 
     opacity: 0;
   }
+}
+.container1 {
+  height: 380px;
+  width: 1000px;
+  top: 60px; 
+  display: flex; 
+  margin:auto;
+  padding-left: 230px;
+  margin-top: 100px 
+}
+
+.card1 {
+  display: flex;
+  height: 380px;
+  width: 300px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  flex-direction: column;
+}
+
+.card1:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card1:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card1:hover ~ .card1 {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 40px; 
+  left: 20px; 
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card1:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card1:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+@media(min-width: 900px){
+.examples{
+display: none;
+}
+}
+@media(max-width:900px){
+.container1{
+display: none;
+}
 }
     </style>
 
@@ -1053,7 +1162,7 @@ a.fa.fa-twitter {
                             <a  href="https://github.com/sicklerjordan" class="fa fa-github"></a>
                             <a  href="https://www.linkedin.com/in/jordan-sickler-946b8b222/" class="fa fa-linkedin"></a>
                             <a class="fa fa-twitter"></a>
-                            <a class="fa fa-instagram"></a>
+                            <a class="fa fa-instagram"></a> 
                     </div>
                 </div>
                 <div class='lines'>
@@ -1106,6 +1215,60 @@ a.fa.fa-twitter {
                 </div>
                 </div>
             </div>
+            <div class="container1">
+                <div class="card1"> 
+                  <h3 class="title">MYSPICESAGE.COM</h3> 
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 60px;"  src="MSSHomeControl.png"  />  
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 30px;"  src="MSSHomeVariation.png"  />  
+                  </div>
+                </div> 
+                <div class="card1">
+                  <h3 class="title">MARKS JEWLERS</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 60px;"  src="mjFilters.png"  />  
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 30px;"  src="mjTabVariation.png"  />  
+                  </div>
+                </div>
+                <div class="card1">
+                  <h3 class="title">UNCLAIMEDBAGGAGE.COM</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 60px;"  src="ubcHomeControl.png"  />  
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 30px;"  src="ubcHomeVariation.png"  />  
+                  </div>
+                </div>
+                <div class="card1">
+                  <h3 class="title">FASHIONABLEHATS.COM</h3>
+                  <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 60px;"  src="FHPdpControl.png"  />  
+                  </div>
+                  <div style="width: 100%; text-align: center;" >
+                    <img style="width: 80%; opacity: .3; margin-top: 30px;"  src="FHPdpVariation.png"  />  
+                  </div>
+                </div>
+              </div>  
             <div class='footer' id="contact" data-aos="fade-in">
                 <h1>GET IN TOUCH</h1>
                 <p>I am currently looking for new web development opportunities,<br />
@@ -1121,12 +1284,13 @@ a.fa.fa-twitter {
       gsap.to('.head1', { duration: 1.5, delay: 2.5, y: '50%', ease: 'bounce' })
       gsap.to('.app', {duration: 1.5, delay: 5, y: '-100%', ease: 'sine'})
       gsap.fromTo('.jay', { duration: 40, opacity: 1, rotation: 0}, {duration: 40, opacity: 1, scale: 1, rotate: 2000})
-      gsap.to('.sideBar-container', {duration: 1.5, delay: 6, y: '120%', ease: 'sine'})               
-      gsap.to('.fa-instagram', {duration: 1, delay: 9, x: '0%', ease: 'sine'})  
-      gsap.to('.fa-github', {duration: 1, delay: 6, x: '0%', ease: 'sine'})   
-      gsap.to('.fa-twitter', {duration: 1, delay: 8, x: '0%', ease: 'sine'})   
-      gsap.to('.fa-linkedin', {duration: 1, delay: 7, x: '0%', ease: 'sine'})  
-      gsap.to('.colone', {duration: 2, delay: 7, x: '0%', ease: 'sine'})  
+      gsap.to('.sideBar-container', {duration: 1, delay: 6, y: '120%', ease: 'sine'})               
+      gsap.to('.fa-instagram', {duration: 1, delay: 6, y: '0%', ease: 'bounce' })   
+      gsap.to('.fa-github', {duration: 1, delay: 9, y: '0%', ease: 'bounce' })    
+      gsap.to('.fa-twitter', {duration: 1, delay: 7, y: '0%', ease: 'bounce' })   
+      gsap.to('.fa-linkedin', {duration: 1, delay: 8, y: '0%', ease: 'bounce' })  
+      gsap.to('.colone', {duration: 2, delay: 7, x: '0%', ease: 'sine' })   
+      gsap.to('.jay', {duration: 2, delay: 5, x: '20px', y: '100px', ease: 'sine' })   
    
          
        
