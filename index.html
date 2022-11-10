@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="portss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
@@ -734,7 +733,7 @@ text-align: center;
     }
 
     .project-header {
-        margin-top: 50px;
+        margin-top: 50px; 
         margin-left: 33%;
     }
     #sub{
@@ -852,7 +851,7 @@ text-align: center;
   @media  screen and (max-width: 550px) {
     .project-header {
         margin: auto;
-        margin-top: 600px;
+        margin-top: 700px; 
         
     }
 
@@ -1056,7 +1055,9 @@ display: none;
 </head>
 <body>
     <div class="app">
-        <p class='jay'>JS</p>
+        <p class='jay'>
+          JS
+        </p>
         <h1 class="head">Jordan</h1><h1 class="head1" ref={h2Ref} id="sickler">Sickler</h1>
       </div>
     <div>
@@ -1088,65 +1089,61 @@ display: none;
                 <div class='project-container'>
                 <div class='card'>
                     <a href="">
-                        <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="cryptoVid.mov"/>
+                        <video autoStart autoPlay  type="video/mp4" src="cryptoVid.mov">
                         </video>
                         </a>
                     </div> 
                     <div class='card'>
                         <a>
-                        <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="vero.mov"/>
-                        </video>
+                        
+                        <video autoStart autoPlay playsinline type="video/mp4" src="vero.mov"></video>
+                        
                         </a>
                     </div> 
                     <div class='card'>
                         <a>
-                    <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="colorVid.mov"/>
-                        </video>
+                        <video autoStart autoPlay  type="video/mp4" src="colorVid.mov"></video>
+                        
                         </a>
                     </div>
                     <div class='card'>
                         <a href="https://github.com/sicklerjordan/crypto-app">
-                        <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="stockVid.mov"/>
+                        <video autoStart autoPlay  type="video/mp4" src="stockVid.mov">
                         </video>
                         </a>
                     </div> 
                     <div class='card'>
                         <a href="">
-                        <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="trinityVid.mov"/>
+                       
+                        <video autoStart autoPlay  type="video/mp4" src="trinityVid.mov">
                         </video>
                         </a>
                     </div> 
                     
                     <div class='card'>
                         <a href="">
-                    <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/8bb751c218184fd89262d9052ecc6679.mov"/>
+                        <video autoStart autoPlay  type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/8bb751c218184fd89262d9052ecc6679.mov">
                         </video>
                         </a>
                     </div>
                     <div class='card'>
                         <a href="https://github.com/sicklerjordan/subreddit" playsinline>
-                    <video muted autoStart autoPlay loop poster="loading2.png">
-                        <source autoStart autoPlay  type="video/mp4" src="redditVid.mov"></source>
+                   
+                        <video autoStart autoPlay  type="video/mp4" src="redditVid.mov">
                         </video>
                         </a>
                     </div> 
                     <div class='card'>
                         <a href="">
-                            <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="kkVid.mov"/>
+                           
+                        <video autoStart autoPlay  type="video/mp4" src="kkVid.mov">
                         </video>
                         </a>
                     </div> 
                     <div class='card'>
                         <a href="">
-                            <video muted autoStart autoPlay loop poster="loading2.png" playsinline>
-                        <source autoStart autoPlay  type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/de24461ac9ea4db7a60af171116b8f89.mov"/>
+                            
+                        <video autoStart autoPlay  type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/de24461ac9ea4db7a60af171116b8f89.mov">
                         </video>
                         </a>
                     </div> 
@@ -1285,10 +1282,10 @@ display: none;
       gsap.to('.app', {duration: 1.5, delay: 5, y: '-100%', ease: 'sine'})
       gsap.fromTo('.jay', { duration: 40, opacity: 1, rotation: 0}, {duration: 40, opacity: 1, scale: 1, rotate: 2000})
       gsap.to('.sideBar-container', {duration: 1, delay: 6, y: '120%', ease: 'sine'})               
-      gsap.to('.fa-instagram', {duration: 1, delay: 6, y: '0%', ease: 'bounce' })   
-      gsap.to('.fa-github', {duration: 1, delay: 9, y: '0%', ease: 'bounce' })    
-      gsap.to('.fa-twitter', {duration: 1, delay: 7, y: '0%', ease: 'bounce' })   
-      gsap.to('.fa-linkedin', {duration: 1, delay: 8, y: '0%', ease: 'bounce' })  
+      gsap.to('.fa-instagram', {duration: 1, delay: 6, y: '0%', ease: 'bounce.out' })   
+      gsap.to('.fa-github', {duration: 1, delay: 9, y: '0%', ease: 'bounce.out' })    
+      gsap.to('.fa-twitter', {duration: 1, delay: 7, y: '0%', ease: 'bounce.out' })   
+      gsap.to('.fa-linkedin', {duration: 1, delay: 8, y: '0%', ease: 'bounce.out' })  
       gsap.to('.colone', {duration: 2, delay: 7, x: '0%', ease: 'sine' })   
       gsap.to('.jay', {duration: 2, delay: 5, x: '20px', y: '100px', ease: 'sine' })   
    
